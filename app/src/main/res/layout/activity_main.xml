@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp_ver3.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="US Baseball Major League Quiz"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="(*Each question has 5 points.)"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"/>
+
+                <EditText
+                    android:id="@+id/redSox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="monospace"
+                    android:hint="1. What city is Red Sox in? (Type here)"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="13dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="13dp"
+                    android:text="2. What's the mascot of Seattle Mariners?"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <RadioButton
+                        android:id="@+id/fredbird"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/fredbird"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/moose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/moose"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/met"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/met"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingLeft="13dp"
+                    android:text="3. Which year(s) have the Chicago Cups won the World Series?"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/option_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="1907"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/option_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="1901"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/option_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="2014"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/option_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="2016"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="13dp"
+                    android:text="4. "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/sanFrancisco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="13dp"
+                    android:hint="Fill the team name"
+                    android:textSize="13sp"
+                    android:fontFamily="monospace"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="13dp"
+                    android:text=" is in San Francisco."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="120dp"
+                android:fontFamily="casual"
+                android:onClick="submitAnswer"
+                android:text="Check the Answer"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="fredbird">Fredbird</string>
+    <string name="moose">Moose</string>
+    <string name="met">Mr.Met</string>
+    <string name="americas">Americas</string>
+    <string name="europe">Europe</string>
+    <string name="asia">Asia</string>
+    <string name="awards_dinner">Awards Dinner</string>
+    <string name="basketball_contest">Basketball Contest</string>
+    <string name="cruise_dinner">Harbor Boat Cruise / Dinner</string>
+    <string name="photo_service">Headshot Photo Service</string>
+</resources>
